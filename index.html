@@ -262,22 +262,20 @@ function kataakhir(){
           setTimeout(muncultombol2,500);
       },}).go();
 }
-let fungtom2 = 0;
-
-function muncultombol2() {
-    fungtom2 = 1;
-    TombolWA.style.opacity = "1";
-    TombolWA.style.transform = "scale(1)";
-}
-
 function menuju(){
-  const phoneNumber = "+8801614218407"; // Replace with recipient's number (use country code, no plus or spaces)
-  const message = "Hi! I saw your message... and yes! ❤️"; // Customize this message
-  const url = `https://wa.me/${+8801614218407}?text=${encodeURIComponent(message)}`;
+  const phoneNumber = "8801614218407"; // Replace with recipient's number (use country code, no plus or spaces)
+  const message = "Hi! I saw your message... and yes,I want to be your partner! ❤️"; // Customize this message
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
+  
+  setTimeout(() => {
+    window.close();
+  }, 1000);
 }
-
-
+function muncultombol2(){TombolWA.style="opacity:1;transform:scale(1)";}
+function fungsitombolwa(){TombolWA.style="opacity:0;transform:scale(0)";}
+function fungsitombol(){Tombol.style="opacity:0;transform:scale(0)";}
+function fungsitombol2(){Tombol.style="opacity:1;transform:scale(1)";}  
 
 
 let tinggi = iniakhir.offsetHeight;
