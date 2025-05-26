@@ -270,11 +270,13 @@ function muncultombol2() {
     TombolWA.style.transform = "scale(1)";
 }
 
-function menuju() {
-    if (fungtom2 === 1) {
-        window.location = "https://api.whatsapp.com/send?phone=+8801614218407&text=I%20want%20to%20be%20your%20partner!%F0%9F%98%9A";
-    }
+function menuju(){
+  const phoneNumber = "+8801614218407"; // Replace with recipient's number (use country code, no plus or spaces)
+  const message = "Hi! I saw your message... and yes! ❤️"; // Customize this message
+  const url = `https://wa.me/${+8801614218407}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
 }
+
 
 
 
